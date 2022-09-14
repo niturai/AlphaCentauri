@@ -170,7 +170,7 @@ def smdata(sigma):
 sdata = smdata(sigma)
 
 # total SNR value 
-SNR = (1/sigma)*(np.sum(sdata)**2)**.5
+SNR = (1/sigma)*np.sum(sdata**2)**.5
 print('total signal to noise ratio = ', SNR)
 
 # the prior transformation 

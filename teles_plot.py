@@ -27,7 +27,7 @@ def aper(x,y):
     phi = -1.82                                              
     cs, sn = np.cos(phi), np.sin(phi)
     x, y = cs*x - sn*y, sn*x + cs*y
-    return circ(x,y,0.20) * np.cos(np.pi*x/0.095)**2          # the masking width 0.095 is a example. 
+    return circ(x,y,0.20) * np.cos(np.pi*x/0.095)**2          # the masking width 0.095 is an example. 
 
 
 w = aper(x-0,y-0)

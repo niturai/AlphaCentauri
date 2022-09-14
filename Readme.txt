@@ -16,6 +16,8 @@ For the orbit simulation, the computation program has been arranged (Run the pro
 4. orbit_plot.py:-   This file plots the orbit of all objects according to the options given inside it.
 
 
+Note:- For simulation work of Intensity Interferometry, we don't need the full path of Proxima Centauri. So, "nstep = 18000" has been taken in parameter.py.
+
 The simulation of Intensity Interferometry, the computation program has been arranged in the following way:- 
 
 1. obslen.py:-       This file contains information about the position of the source and the position of the telescope for observation. The 
@@ -32,7 +34,7 @@ The simulation of Intensity Interferometry, the computation program has been arr
                      The simulation package dynesty (dynamic nested sampling) has been used to estimate the parameter value.
 
 
-Run the intfer.py to simulate intensity interferometry for binary system Alpha Centauri AB. The result will store in a ".pkl" file as "dres.pkl"
+Note:- Run the intfer.py to simulate intensity interferometry for binary system Alpha Centauri AB. The result will store in a ".pkl" file as "dres.pkl"
 
 
 Plotting the interferometric data has been arranged in different python files like:-
@@ -54,14 +56,23 @@ Plotting the interferometric data has been arranged in different python files li
                      "zs=2.5e-7" in "fiting.py" for different period of planet.     
 
 6. mskwth.py:-       This file shows the effect of different widths of the mask strip on the interferometric signal. To see the precise impact 
-                     of varying size of mask's width change the value of observation "Nobs = 1/96" (for 15 minutes of observation) also take the 
-                     number of the night "Night = 1" in "obslen.py"
+                     of varying size of mask's width, change the value of observation "Nobs = 1/96" (for 15 minutes of observation) also         
+                     take the number of the night "Night = 1" in "obslen.py".
 
 7. mskorn.py:-       This file shows the effect of the different orientation angles of masked aperture on the signal. To see the precise impact  
                      of varying size of mask's width, change the value of observation "Nobs = 1/96" (for 15 minutes of observation) also take 
-                     the number of the night "Night = 1" in "obslen.py"
+                     the number of the night "Night = 1" in "obslen.py".
 
-8. spflux.py:-       This file plots the spectral photon flux for two blackbodies approximating the alpha Centauri A and B.  
+8. varagl.py:-      This file plots a figure to show the variation in signal according to change in the different orientation angles of masked
+                     aperture.    
+
+9. varwdth.py:-     This file plots a figure to show the variation in signal according to change in the different widths angles of masked
+                     aperture.
+
+10. spflux.py:-       This file plots the spectral photon flux for two blackbodies approximating the alpha Centauri A and B. 
+
+11. simu_data.py:-    This file plots the signal and noise for one baseline with 10 spectral channels for 15 minutes only.
+
 
 
 Notes:- 
@@ -70,4 +81,4 @@ Notes:-
 
 2. To see the effect of the threshold mass of the planet, change the input value of the planet's mass in "inicn.py", defined as "obj2".
 
-3. To see the effect of observation length on interferometric error reduction, change the number of observation nights in "obslen.py," defined as "Night", also "chnl = 1".    
+3. To see the effect of observation length on interferometric error reduction, change the number of observation nights in "obslen.py," defined as "Night", also with only one channel, "chnl = 1".    

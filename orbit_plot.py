@@ -106,7 +106,7 @@ plt.legend()
 plt.show()
 
 #*********************************************#
-#Orbit plot of binary system each  
+#Orbit plot of binary system AlphaCen-AB  
 plt.close()
 plt.rcParams.update({'font.size': 14})
 plt.rcParams["figure.figsize"] = [8,8]
@@ -121,7 +121,7 @@ plt.legend()
 plt.show()
 
 #*********************************************#
-#Orbit plot of AlphaCen A system
+#Orbit plot of AlphaCen A with planet
 plt.close()
 plt.rcParams.update({'font.size': 14})
 plt.rcParams["figure.figsize"] = [8,8]
@@ -136,7 +136,7 @@ plt.legend()
 plt.show()
 
 #*********************************************#
-#Respective Orbit plot of Binary System 
+#Respective Orbit plot of Binary System AlphaCen-AB
 plt.close()
 plt.rcParams.update({'font.size': 14})
 plt.rcParams["figure.figsize"] = [8,8]
@@ -181,7 +181,7 @@ plt.legend(bbox_to_anchor=(0., 1.00, 1., .102), loc='lower left', ncol=2, mode =
 plt.show()
 
 #***********************************************#
-# plot the wobble of alpha cen-A for approximately three years
+# plot of alpha cen-A for approximatly 6 years to see the wobble 
 plt.close()
 plt.rcParams.update({'font.size': 14})
 plt.rcParams["figure.figsize"] = [8,8]
@@ -193,7 +193,7 @@ plt.subplots_adjust(left=0.16, bottom=None, right=None, top=None, wspace=None, h
 plt.show()
 
 #***********************************************#
-# plot the orbit of alpha cen-B for approximately three years
+# plot the orbit of alpha cen-B for approximatly 6 years
 plt.close()
 plt.rcParams.update({'font.size': 14})
 plt.rcParams["figure.figsize"] = [8,8]
